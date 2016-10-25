@@ -1,0 +1,2 @@
+/usr/bin/ar qc libinit_lib.a  CMakeFiles/init_lib.dir/src/init/list.cpp.o
+/usr/bin/ranlib libinit_lib.a

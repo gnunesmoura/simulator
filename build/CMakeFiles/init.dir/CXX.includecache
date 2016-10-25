@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/init/list.hpp
+iostream
+-
+
+/home/vostro/Documents/Programming/c++/Simulator/src/main.cpp
+iostream
+-
+init/list.hpp
+-
+

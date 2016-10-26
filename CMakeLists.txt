@@ -19,6 +19,7 @@ option(debug "Buiding in debug mode" OFF)
 # -Dgnucompiler=ON
 # Padrão: Ativado
 option(gnucompiler "Building using GNU G++" ON)
+set (CMAKE_CXX_STANDARD 11)
 
 #### Configurações básicas do projeto ####
 # Nome do projeto

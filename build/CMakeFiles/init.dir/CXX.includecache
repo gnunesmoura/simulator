@@ -6,13 +6,21 @@
 
 #IncludeRegexTransform: 
 
-../include/init/list.hpp
+../include/init/enum/enum.hpp
+type_traits
+-
 iostream
 -
 
-/home/vostro/Documents/Programming/c++/Simulator/src/main.cpp
-iostream
+../include/init/node/node.hpp
+vector
 -
-init/list.hpp
+init/enum/enum.hpp
+-
+
+/home/vostro/Documents/Programming/c++/Simulator/src/main.cpp
+vector
+-
+init/node/node.hpp
 -
 

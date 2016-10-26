@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/init_lib.dir/src/init/list.cpp.o"
+  "CMakeFiles/init_lib.dir/src/init/node/node.cpp.o"
   "libinit_lib.pdb"
   "libinit_lib.a"
 )

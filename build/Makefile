@@ -136,32 +136,32 @@ init_lib/fast:
 	$(MAKE) -f CMakeFiles/init_lib.dir/build.make CMakeFiles/init_lib.dir/build
 .PHONY : init_lib/fast
 
-src/init/list.o: src/init/list.cpp.o
+src/init/node/node.o: src/init/node/node.cpp.o
 
-.PHONY : src/init/list.o
+.PHONY : src/init/node/node.o
 
 # target to build an object file
-src/init/list.cpp.o:
-	$(MAKE) -f CMakeFiles/init_lib.dir/build.make CMakeFiles/init_lib.dir/src/init/list.cpp.o
-.PHONY : src/init/list.cpp.o
+src/init/node/node.cpp.o:
+	$(MAKE) -f CMakeFiles/init_lib.dir/build.make CMakeFiles/init_lib.dir/src/init/node/node.cpp.o
+.PHONY : src/init/node/node.cpp.o
 
-src/init/list.i: src/init/list.cpp.i
+src/init/node/node.i: src/init/node/node.cpp.i
 
-.PHONY : src/init/list.i
+.PHONY : src/init/node/node.i
 
 # target to preprocess a source file
-src/init/list.cpp.i:
-	$(MAKE) -f CMakeFiles/init_lib.dir/build.make CMakeFiles/init_lib.dir/src/init/list.cpp.i
-.PHONY : src/init/list.cpp.i
+src/init/node/node.cpp.i:
+	$(MAKE) -f CMakeFiles/init_lib.dir/build.make CMakeFiles/init_lib.dir/src/init/node/node.cpp.i
+.PHONY : src/init/node/node.cpp.i
 
-src/init/list.s: src/init/list.cpp.s
+src/init/node/node.s: src/init/node/node.cpp.s
 
-.PHONY : src/init/list.s
+.PHONY : src/init/node/node.s
 
 # target to generate assembly for a file
-src/init/list.cpp.s:
-	$(MAKE) -f CMakeFiles/init_lib.dir/build.make CMakeFiles/init_lib.dir/src/init/list.cpp.s
-.PHONY : src/init/list.cpp.s
+src/init/node/node.cpp.s:
+	$(MAKE) -f CMakeFiles/init_lib.dir/build.make CMakeFiles/init_lib.dir/src/init/node/node.cpp.s
+.PHONY : src/init/node/node.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -200,9 +200,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... init"
 	@echo "... init_lib"
-	@echo "... src/init/list.o"
-	@echo "... src/init/list.i"
-	@echo "... src/init/list.s"
+	@echo "... src/init/node/node.o"
+	@echo "... src/init/node/node.i"
+	@echo "... src/init/node/node.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

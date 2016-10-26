@@ -1,8 +1,9 @@
 #include <iostream>
+#include <init/list.hpp>
 
 using namespace std;
 
 int main () {
-    cout << "oie" << endl;
+    
     return 0;
 }

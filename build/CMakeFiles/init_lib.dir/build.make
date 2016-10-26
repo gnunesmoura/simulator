@@ -57,38 +57,38 @@ include CMakeFiles/init_lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/init_lib.dir/flags.make
 
-CMakeFiles/init_lib.dir/src/init/list.cpp.o: CMakeFiles/init_lib.dir/flags.make
-CMakeFiles/init_lib.dir/src/init/list.cpp.o: ../src/init/list.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vostro/Documents/Programming/c++/Simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/init_lib.dir/src/init/list.cpp.o"
-	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/init_lib.dir/src/init/list.cpp.o -c /home/vostro/Documents/Programming/c++/Simulator/src/init/list.cpp
+CMakeFiles/init_lib.dir/src/init/node/node.cpp.o: CMakeFiles/init_lib.dir/flags.make
+CMakeFiles/init_lib.dir/src/init/node/node.cpp.o: ../src/init/node/node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vostro/Documents/Programming/c++/Simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/init_lib.dir/src/init/node/node.cpp.o"
+	/usr/bin/g++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/init_lib.dir/src/init/node/node.cpp.o -c /home/vostro/Documents/Programming/c++/Simulator/src/init/node/node.cpp
 
-CMakeFiles/init_lib.dir/src/init/list.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/init_lib.dir/src/init/list.cpp.i"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vostro/Documents/Programming/c++/Simulator/src/init/list.cpp > CMakeFiles/init_lib.dir/src/init/list.cpp.i
+CMakeFiles/init_lib.dir/src/init/node/node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/init_lib.dir/src/init/node/node.cpp.i"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vostro/Documents/Programming/c++/Simulator/src/init/node/node.cpp > CMakeFiles/init_lib.dir/src/init/node/node.cpp.i
 
-CMakeFiles/init_lib.dir/src/init/list.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/init_lib.dir/src/init/list.cpp.s"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vostro/Documents/Programming/c++/Simulator/src/init/list.cpp -o CMakeFiles/init_lib.dir/src/init/list.cpp.s
+CMakeFiles/init_lib.dir/src/init/node/node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/init_lib.dir/src/init/node/node.cpp.s"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vostro/Documents/Programming/c++/Simulator/src/init/node/node.cpp -o CMakeFiles/init_lib.dir/src/init/node/node.cpp.s
 
-CMakeFiles/init_lib.dir/src/init/list.cpp.o.requires:
+CMakeFiles/init_lib.dir/src/init/node/node.cpp.o.requires:
 
-.PHONY : CMakeFiles/init_lib.dir/src/init/list.cpp.o.requires
+.PHONY : CMakeFiles/init_lib.dir/src/init/node/node.cpp.o.requires
 
-CMakeFiles/init_lib.dir/src/init/list.cpp.o.provides: CMakeFiles/init_lib.dir/src/init/list.cpp.o.requires
-	$(MAKE) -f CMakeFiles/init_lib.dir/build.make CMakeFiles/init_lib.dir/src/init/list.cpp.o.provides.build
-.PHONY : CMakeFiles/init_lib.dir/src/init/list.cpp.o.provides
+CMakeFiles/init_lib.dir/src/init/node/node.cpp.o.provides: CMakeFiles/init_lib.dir/src/init/node/node.cpp.o.requires
+	$(MAKE) -f CMakeFiles/init_lib.dir/build.make CMakeFiles/init_lib.dir/src/init/node/node.cpp.o.provides.build
+.PHONY : CMakeFiles/init_lib.dir/src/init/node/node.cpp.o.provides
 
-CMakeFiles/init_lib.dir/src/init/list.cpp.o.provides.build: CMakeFiles/init_lib.dir/src/init/list.cpp.o
+CMakeFiles/init_lib.dir/src/init/node/node.cpp.o.provides.build: CMakeFiles/init_lib.dir/src/init/node/node.cpp.o
 
 
 # Object files for target init_lib
 init_lib_OBJECTS = \
-"CMakeFiles/init_lib.dir/src/init/list.cpp.o"
+"CMakeFiles/init_lib.dir/src/init/node/node.cpp.o"
 
 # External object files for target init_lib
 init_lib_EXTERNAL_OBJECTS =
 
-libinit_lib.a: CMakeFiles/init_lib.dir/src/init/list.cpp.o
+libinit_lib.a: CMakeFiles/init_lib.dir/src/init/node/node.cpp.o
 libinit_lib.a: CMakeFiles/init_lib.dir/build.make
 libinit_lib.a: CMakeFiles/init_lib.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vostro/Documents/Programming/c++/Simulator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libinit_lib.a"
@@ -100,7 +100,7 @@ CMakeFiles/init_lib.dir/build: libinit_lib.a
 
 .PHONY : CMakeFiles/init_lib.dir/build
 
-CMakeFiles/init_lib.dir/requires: CMakeFiles/init_lib.dir/src/init/list.cpp.o.requires
+CMakeFiles/init_lib.dir/requires: CMakeFiles/init_lib.dir/src/init/node/node.cpp.o.requires
 
 .PHONY : CMakeFiles/init_lib.dir/requires
 

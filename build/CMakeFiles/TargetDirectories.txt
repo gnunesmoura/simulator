@@ -1,4 +1,0 @@
-/home/vostro/Documents/Programming/c++/Simulator/build/CMakeFiles/edit_cache.dir
-/home/vostro/Documents/Programming/c++/Simulator/build/CMakeFiles/rebuild_cache.dir
-/home/vostro/Documents/Programming/c++/Simulator/build/CMakeFiles/init.dir
-/home/vostro/Documents/Programming/c++/Simulator/build/CMakeFiles/init_lib.dir

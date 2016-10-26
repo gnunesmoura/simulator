@@ -1,1 +1,0 @@
-/usr/bin/g++   -O3 -DNDEBUG   CMakeFiles/init.dir/src/main.cpp.o  -o init -rdynamic -lgsl -lgslcblas libinit_lib.a 

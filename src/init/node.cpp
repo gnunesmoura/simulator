@@ -23,3 +23,11 @@ void Node::addEdge (Node * b, double dist) {
     if(b->getType() == Type::anchor) anchor.push_back(e);
     else neighbor.push_back(e);
 }
+
+size_t Node::getNAnchors () {
+    return anchor.size();
+}
+
+size_t Node::getNNeighbors () {
+    return neighbor.size();
+}

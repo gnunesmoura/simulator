@@ -11,6 +11,7 @@ private:
     std::vector<Edge> anchor;
     std::vector<Edge> neighbor;
     Type type;
+
 public:
     Node (double x, double y, Type t) {this->x = x; this->y = y; this->type = t; }
     ~Node () {};
@@ -19,6 +20,11 @@ public:
     void newPos (double x, double y);
     void setType(Type t);
     void addEdge (Node * b, double dist);
+    size_t getNAnchors();
+    size_t getNNeighbors();
 };
+
+
+
 
 #endif

@@ -17,3 +17,8 @@ void Node::newPos (double x, double y) {
 void Node::setType (Type a) {
     this->type = a;
 }
+
+void Node::addEdge (Node * b) {
+    if(b->getType() == Type::anchor) anchor.push_back(b);
+    else neighbor.push_back(b);
+}

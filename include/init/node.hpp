@@ -2,23 +2,23 @@
 #define node_h
 
 #include <vector>
-#include <init/enum/enum.hpp>
+#include <init/enum.hpp>
+#include <init/edge.hpp>
 
 class Node {
 private:
     double x, y;
-    // Adicionar arestas.
-    // std::vector<Node*> anchor;
-    // std::vector<Node*> neighbor;
+    std::vector<Edge> anchor;
+    std::vector<Edge> neighbor;
     Type type;
 public:
-
     Node (double x, double y, Type t) {this->x = x; this->y = y; this->type = t; }
     ~Node () {};
     double get (Axis a);
     Type getType ();
     void newPos (double x, double y);
     void setType(Type t);
+    void addEdge (Node * b);
 };
 
 #endif

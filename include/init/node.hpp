@@ -18,7 +18,7 @@ public:
     Type getType ();
     void newPos (double x, double y);
     void setType(Type t);
-    void addEdge (Node * b);
+    void addEdge (Node * b, double dist);
 };
 
 #endif

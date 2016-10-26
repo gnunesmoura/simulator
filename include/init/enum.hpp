@@ -1,3 +1,7 @@
+#ifndef enum_h
+#define enum_h
+
+
 #include <type_traits>
 #include <iostream>
 
@@ -17,3 +21,5 @@ std::ostream& operator<<(typename std::enable_if<std::is_enum<T>::value, std::os
 {
     return stream << static_cast<typename std::underlying_type<T>::type>(e);
 }
+
+#endif

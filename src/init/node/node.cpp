@@ -1,4 +1,4 @@
-#include <init/node/node.hpp>
+#include <init/node.hpp>
 
 double Node::get (Axis a) {
     if(a == Axis::x) return this->x;

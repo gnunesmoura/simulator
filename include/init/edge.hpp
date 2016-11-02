@@ -4,11 +4,13 @@
 #include <init/enum.hpp>
 // #include <init/node.hpp>
 
+class Node;
+
 class Edge {
 public:
-    void * b;
+    Node * b;
     double dist;
-    Edge (void * b, double dist) {this->b = b; this->dist = dist; }
+    Edge (Node * b, double dist) {this->b = b; this->dist = dist; }
     ~Edge () {}
 };
 

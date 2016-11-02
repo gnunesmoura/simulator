@@ -1,10 +1,19 @@
-#ifndef node_h
-#define node_h
+/**
+ * \file node.hpp
+ *
+ *
+ *   
+ */
+
+#pragma once
 
 #include <vector>
 #include <init/enum.hpp>
 #include <init/edge.hpp>
 
+/**
+ * Class defines the behavior of the nodes.
+ */
 class Node {
 private:
     double x, y;
@@ -13,7 +22,15 @@ private:
     Type type;
 
 public:
+    /**
+     * Creates a new node.
+     *
+     * \param x Position in the x axiss.
+     * \param y Position in the y axiss.
+     * \param t Type of the node.
+     */
     Node (double x, double y, Type t) {this->x = x; this->y = y; this->type = t; }
+
     ~Node () {};
     double get (Axis a);
     Type getType ();
@@ -23,8 +40,3 @@ public:
     size_t getNAnchors();
     size_t getNNeighbors();
 };
-
-
-
-
-#endif

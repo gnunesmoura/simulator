@@ -25,6 +25,7 @@ public:
     /**
      * Destroy the vector.
      */
+     
     ~Vector ();
 private:
     double x;

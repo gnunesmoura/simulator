@@ -1,8 +1,7 @@
-// #ifndef edge_h
-// #define edge_h
+#pragma once
 
 #include <init/enum.hpp>
-// #include <init/node.hpp>
+
 
 class Node;
 
@@ -13,6 +12,3 @@ public:
     Edge (Node * b, double dist) {this->b = b; this->dist = dist; }
     ~Edge () {}
 };
-
-
-// #endif

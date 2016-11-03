@@ -81,8 +81,13 @@ private:
      * Direction y of the vector.
      */
     double y;
+    
     /**
      * Calculate the Euclidean Norm of the vector.
-     */.
+     *
+     * \param x First dimension of the vector.
+     * \param y Second dimension of the vector.
+     * \return double Euclidean Norm of the vector. 
+     */
     double calcNorm (double x, double y);
 };

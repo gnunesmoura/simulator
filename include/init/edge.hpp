@@ -21,6 +21,7 @@ class Edge {
 public:
     Node * b;
     double dist;
-    Edge (Node * b, double dist) {this->b = b; this->dist = dist; }
+    Edge (Node * b, double dist) {this->b = b; this->dist = dist;   }
+    Edge () {b = NULL; dist = 0;   }
     ~Edge () {}
 };

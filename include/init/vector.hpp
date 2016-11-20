@@ -24,7 +24,15 @@ public:
      * \param b Node b, the direction of the vector from the a.
      * \param norm The norm of the Vector
      */
-    Vector (Node a, Node b, double norm);
+    Vector (Node * a, Node * b, double norm);
+
+    /**
+     * Create a new vector between two nodes with a specific norm.
+     *
+     * \param a Node a, where the vector starts.
+     * \param b Node b, the direction of the vector from the a.
+     */
+    Vector (Node * a, Node * b);
 
     /**
      * Create a new vector.

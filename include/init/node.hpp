@@ -7,6 +7,7 @@
 
 #pragma once
 
+#include <iostream>
 #include <vector>
 #include <init/enum.hpp>
 #include <init/edge.hpp>
@@ -25,8 +26,8 @@ public:
     /**
      * Creates a new node.
      *
-     * \param x Position in the x axiss.
-     * \param y Position in the y axiss.
+     * \param x Position in the x axis.
+     * \param y Position in the y axis.
      * \param t Type of the node.
      */
     Node (double x, double y, Type t) {this->x = x; this->y = y; this->type = t; }
@@ -39,4 +40,21 @@ public:
     void addEdge (Node * b, double dist);
     size_t getNAnchors();
     size_t getNNeighbors();
+
+    /**
+     * Return the vector of anchors of the node.
+     * /return vector<Edge>* pointer to the vector. 
+     */ 
+    std::vector<Edge> * getAnchors ();
+
+    /**
+     * Return the vector of neighbors of the node.
+     * /return vector<Edge>* pointer to the vector. 
+     */
+    std::vector<Edge> * getNeighbors ();
+
+    /**
+     * Prints the node.
+     */
+    void print ();
 };

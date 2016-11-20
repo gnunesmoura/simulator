@@ -1,10 +1,10 @@
 #include <init/vector.hpp>
 
-Vector::Vector (Node a, Node b, double norm) {
+Vector::Vector (Node * a, Node * b, double norm) {
     double xC, yC, normC, divider;
 
-    xC = b.get(Axis::x) - a.get(Axis::x);
-    yC = b.get(Axis::y) - a.get(Axis::y);
+    xC = b->get(Axis::x) - a->get(Axis::x);
+    yC = b->get(Axis::y) - a->get(Axis::y);
     normC = calcNorm(xC, yC);
     divider = normC/norm;
     xC /= divider;
@@ -12,6 +12,11 @@ Vector::Vector (Node a, Node b, double norm) {
 
     this->x = xC;
     this->y = yC;
+}
+
+Vector::Vector (Node * a, Node * b) {
+    this->x = b->get(Axis::x) - a->get(Axis::x);
+    this->y = b->get(Axis::y) - a->get(Axis::y);
 }
 
 Vector::Vector (double x, double y) {

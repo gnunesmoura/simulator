@@ -31,3 +31,17 @@ size_t Node::getNAnchors () {
 size_t Node::getNNeighbors () {
     return neighbor.size();
 }
+
+std::vector<Edge> * Node::getAnchors () {
+    return &anchor;
+}
+
+std::vector<Edge> * Node::getNeighbors () {
+    return &neighbor;
+}
+
+void Node::print () {
+    std::cout << "x = " << this->x;
+    std::cout << " y = " << this->y;
+    std::cout << " type = " << type << std::endl;
+}

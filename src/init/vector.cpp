@@ -5,13 +5,19 @@ Vector::Vector (Node * a, Node * b, double norm) {
 
     xC = b->get(Axis::x) - a->get(Axis::x);
     yC = b->get(Axis::y) - a->get(Axis::y);
-    normC = calcNorm(xC, yC);
-    divider = normC/norm;
-    xC /= divider;
-    yC /= divider;
 
-    this->x = xC;
-    this->y = yC;
+    if(xC == 0 && yC == 0) {
+        this->x = 0;
+        this->y = 0;
+    } else {
+        normC = calcNorm(xC, yC);
+        divider = normC/norm;
+        xC /= divider;
+        yC /= divider;
+
+        this->x = xC;
+        this->y = yC;
+    }
 }
 
 Vector::Vector (Node * a, Node * b) {
@@ -29,7 +35,8 @@ double Vector::getNorm () {
 }
 
 inline double Vector::calcNorm (double x, double y) {
-    return sqrt ( (x*x) + (y * y) );
+    if(x == 0 && y == 0) return 0;
+    return sqrt ( (x * x) + (y * y) );
 }
 
 double Vector::get(Axis a) {
@@ -52,6 +59,6 @@ Vector Vector::operator* (double scalar) {
 
 void Vector::print () {
         std::cout << "x = " << this->x;
-        std::cout << " y = " << this->y;
-        std::cout << " norm = " << getNorm() << std::endl;
+        std::cout << "\ty = " << this->y;
+        std::cout << "\tnorm = " << getNorm() << std::endl;
 }

@@ -7,6 +7,7 @@
 #pragma once
 
 #include <init/enum.hpp>
+#include <stdio.h>
 
 /**
  * Forward declaration of the class Node.
@@ -24,4 +25,10 @@ public:
     Edge (Node * b, double dist) {this->b = b; this->dist = dist;   }
     Edge () {b = NULL; dist = 0;   }
     ~Edge () {}
+    
+    /**
+     * Prints the command to plot the object on Geogebra.
+     */
+    void printGeo (int id);
+
 };

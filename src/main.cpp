@@ -1,36 +1,49 @@
 #include <iostream>
 #include <vector>
-// #include <init/node.hpp>
-// #include <init/vector.hpp>
-// #include <init/edge.hpp>
 #include <init/movement.hpp>
+#include <init/system.hpp>
+#include <init/dataaccess/instance_read.hpp>
+#include <init/test.hpp>
 
 using namespace std;
+
 
 int main () {
     cout << "\n\n";
     
-    Node a(0, 0, Type::anchor);
-    Node b(2, 0, Type::anchor);
-    Node c(0, 2, Type::anchor);
-    Node d(0, -2, Type::anchor);
+    Instance instance = readInstance("4.2_loc.txt");
 
-    a.addEdge(&b, 3);
-    a.addEdge(&c, 3);
-    a.addEdge(&d, 3);
+    System s(instance);
+
+    s.solve();
     
-    Movement m(&a);
+    // instance.printNodes();
+    vector<Node*> a = instance.getAnchors();
+    for(int i = 0; i <a.size(); i++) {
+        a[i]->printGeo();
+    }
+    vector<Node*> anchors = instance.getNodes();
 
-    double move;
+    vector<Node> result = readResult("4.2_sol.txt");
     int cont = 0;
-    a.print();
-    do {
-        move = m.move();
-        a.print();
-        cout << cont << endl;
-        cont++;
-    } while (move > 0.00000001);
+    cout << "Id\ttype\tplaceds\tanchors\terro\n";
+    for (int i = 0; i < anchors.size(); ++i) {
+        Vector v (anchors[i], &(result[i]));
+        if(v.getNorm() < 0.01) cont ++;
+        else {
+            // cout << anchors[i]->getId() << "\t" << anchors[i]->getType() << "\t" << anchors[i]->getNPlaceds() << "\t" << anchors[i]->getNAnchors() << "\t" << v.getNorm() <<"\n";
+            anchors[i]->printEdgesGeo();
+            // wait;
+        }
+    }
+
+    cout << "\nNós corretos " << cont << "\n\n";
+
+    // anchors[77]->inRange(anchors[89], 0. );
+    // anchors[79]->printEdgesGeo();
+    // anchors[70]->printEdgesGeo();
     
+    printResult (anchors, "resultado-4.2.txt");
 
     return 0;
 }
